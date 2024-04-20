@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Layout</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/home.css">
 </head>
 <body>
+    <!-- <div id="navbar">
+        <button id="home">Home</button>
+    </div>
+    <div class="container"></div> -->
+   
     <div id="main">
         
-        <div class="header">
-            <img src="./sugar.png" alt="">
-            <input type="text" placeholder="🙂 try Liquid Lipstic">
-            
-            <a style="color: white;" href="#" id="loginLink">Login/Register</a> 
-        </div>
+      
 
         <!-- Login Popup -->
         
-        <div id="loginPopup" class="popup">
+        <!-- <div id="loginPopup" class="popup">
             
             <div class="popup-content">
                 
@@ -33,53 +33,35 @@
                     <button type="submit">Login</button><br>
                 </form>
             </div>
-        </div>
+        </div> -->
 
 
-   
-        <div class="navbar">
-            <a href="LIP.html" class="nav-link">LIP</a>
+        <div id="navbar">
+            <div style="padding-top: 20px;">
+                
+                <a href="home.html"> <img src="./all images/sugar.png" alt="Sugar Logo"> </a>
+                <input type="text" placeholder="🙂 try Liquid Lipstic">
+                <button id="login">login</button>
+                <button id="signup">Signup</button>
+                <button id="cart"><a href="./cart.html">cart🛒</a></button>
+
+            </div><br><br>
             
-            <div class="popup">
-                <div class="popup-content">
-                    
-                    <ul>
-                        <h4>Lipsticks</h4>
-                        <li>TRANSFERPROOF LIPSTICK</li>
-                        <li>MATTE LIPSTICK</li>
-                        <li>LIQUID LIPSTICK</li>
-                        <li>CRAYON LIPSTICK</li>
-                        <li>POWDER LIPSTICK</li>
-                        <li>STAIN LIPSTICK</li>
-                        <li>BULLET LIPSTICK</li>
-                        <li>LIP GLOWS & LINERS</li>
-                    </ul>
-                    <ul>
-                        <h4>Lip Care</h4>
-                        <li>LIPSTICK FIXER & REMOVER</li>
-                        <li>LIP PRIMERS & SCRUB</li>
-                        <li>LIP BALMS</li>
-                    </ul>
-                    <ul>
-                        <h4>Lip Sets and Combos</h4>
-                        <li>LIPSTICK SETS</li>
-                        <li>LIPSTICK COMBOS</li>
-                    </ul>
-                </div>
+            <div class="nav-links">
+                <button class="facepage"><a href="./face.html">FACE</a></button> 
+                <a href="#">LIPS</a>  
+                <a href="#">EYES</a>
+                <a href="#">NAILS</a>
+                <a href="#">SKINCARE</a>
+                <a href="#">ACCESSORIES</a>
+                <a href="#">GIFTING</a>
+                <a href="#">BESTSELLERS</a>
+                <a href="#">NEW LAUNCHES</a>
+                <a href="#">OFFERS</a>
+                <a href="#">BLOG</a>
             </div>
-            
-            <a href="#">EYES</a>
-            <a href="#">FACE</a>
-            <a href="#">NAILS</a>
-            <a href="#">SKINCARE</a>
-            <a href="#">ACCESSORIES</a>
-            <a href="#">GIFTING</a>
-            <a href="#">BESTSELLERS</a>
-            <a href="#">NEW LAUNCHES</a>
-            <a href="#">OFFERS</a>
-            <a href="#">BLOG</a>
-        </div>
-
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        
    
 
 
@@ -89,19 +71,19 @@
 
 <div class="slideshow-container">
     <div class="slide">
-        <img class="img"  src="image1.png" alt="Slide 1">
+        <img class="img"  src="./all images/image1.png" alt="Slide 1">
     </div>
     <div class="slide">
-        <img class="img" src="image2.png" alt="Slide 2">
+        <img class="img" src="./all images/image2.png" alt="Slide 2">
     </div>
     <div class="slide">
-        <img class="img"  src="image3.png" alt="Slide 3">
+        <img class="img"  src="./all images/image3.png" alt="Slide 3">
     </div>
     <div class="slide">
-        <img class="img"  src="image4.png" alt="Slide 2">
+        <img class="img"  src="./all images/image4.png" alt="Slide 2">
     </div>
     <div class="slide">
-        <img class="img"  src="image5.png" alt="Slide 3">
+        <img class="img"  src="./all images/image5.png" alt="Slide 3">
     </div>
     
 
@@ -113,7 +95,7 @@
 <div class="imgCont">
     <div>
         <h3>CLUB VELLVATTE</h3>
-        <img class="imgg" src="./benner.png" alt="">
+        <img class="imgg" src="./all images/benner.png" alt="">
     </div>
 
 
@@ -157,7 +139,7 @@
 
     <div>
         <h3>FESTIVE ZONE</h3>
-        <img class="imgg" src="./benne2.png" alt="">
+        <img class="imgg" src="./all images/benne2.png" alt="">
     </div>
 
 
@@ -204,16 +186,16 @@
 
     <div>
         <h3>PRODUCT OF THE MONTH</h3>
-        <img class="imgg" src="./benner3.png" alt="">
+        <img class="imgg" src="./all images/benner3.png" alt="">
     </div>
     <div>
         <h3>MATTE ATTACK TRANSFERPROOF LIPSTICK
         </h3>
-        <img class="imgg" src="./benner4.png" alt="">
+        <img class="imgg" src="./all images/benner4.png" alt="">
     </div>
     <div>
         <h3>REFER YOUR FRIENDS</h3>
-        <img class="imgg" src="./benner5.png" alt="">
+        <img class="imgg" src="./all images/benner5.png" alt="">
     </div>
 </div>
 
@@ -234,7 +216,17 @@
 </div>
 
 </body>
+<script src="./script/home.js"></script>
+<script src="./script/Login.js"></script>
+<script src="./script/signup.js"></script>
+<script src="./cart.html"></script>
 <script>
+
+let facepage=document.querySelector(".facepage")
+facepage.addEventListener("click",function(){
+    window.location.href="face.html"
+})
+
      let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -262,42 +254,42 @@ let slideTimer = setInterval(function() {
     plusSlides(1);
 }, 1000); 
 
-//login
+// //login
 
-document.getElementById('loginLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('loginPopup').style.display = 'block';
-    });
+// document.getElementById('loginLink').addEventListener('click', function(event) {
+//         event.preventDefault();
+//         document.getElementById('loginPopup').style.display = 'block';
+//     });
 
-    // Function to close the login popup
-    function closeLoginPopup() {
-        document.getElementById('loginPopup').style.display = 'none';
-    }
+//     // Function to close the login popup
+//     // function closeLoginPopup() {
+//     //     document.getElementById('loginPopup').style.display = 'none';
+//     // }
 
-    // Handle form submission
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+//     // Handle form submission
+//     document.getElementById('loginForm').addEventListener('submit', function(event) {
+//         event.preventDefault();
         
-        // Get username and password values
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+//         // Get username and password values
+//         const username = document.getElementById('username').value;
+//         const password = document.getElementById('password').value;
         
-        // Check if username and password are correct
-        if (username === 'admin' && password === 'password') {
-            alert('Login successful!');
-            closeLoginPopup(); // Close the popup on successful login
-        } else {
-            alert('Incorrect username or password. Please try again.');
-        }
-    });
-    function openPopup(popupId) {
-        document.getElementById(popupId).style.display = 'block';
-    }
+//         // Check if username and password are correct
+//         if (username === 'admin' && password === 'password') {
+//             alert('Login successful!');
+//             closeLoginPopup(); // Close the popup on successful login
+//         } else {
+//             alert('Incorrect username or password. Please try again.');
+//         }
+//     });
+//     // function openPopup(popupId) {
+//     //     document.getElementById(popupId).style.display = 'block';
+//     // }
 
-    // Function to close the popup
-    function closePopup(popupId) {
-        document.getElementById(popupId).style.display = 'none';
-    }
+//     // // Function to close the popup
+//     // function closePopup(popupId) {
+//     //     document.getElementById(popupId).style.display = 'none';
+//     // }
 
 
 

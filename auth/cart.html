@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
+<script>
+
+let cont=document.querySelector(".container")
+
+let lsData = JSON.parse(localStorage.getItem("cart") || "[]");
+
+
+
+function showdata(newarr){
+    cont.innerHTML=""
+    newarr.forEach(function(el,i){
+
+        let div=document.createElement("div")
+
+        let image=document.createElement("img")
+        image.setAttribute("src",el.image)
+
+        let name=document.createElement("h3")
+        name.innerText=el.name
+
+        let designation=document.createElement("p")
+        designation.innerText=el.designation
+
+        let price=document.createElement("p")
+        price.innerText=el.price
+
+        
+        let removeBtn = document.createElement("button");
+                removeBtn.innerText = "Remove";
+                removeBtn.addEventListener("click", function() {
+                    // Remove the item from the cart array
+                    lsData.splice(i, 1);
+                    // Update the localStorage
+                    localStorage.setItem("cart", JSON.stringify(lsData));
+                    // Re-render the cart items
+                    showdata(lsData);
+                });
+
+
+        
+        div.append(image,name,designation,price,removeBtn)
+        cont.append(div)
+    })
+
+}
+showdata(lsData)
+
+</script>

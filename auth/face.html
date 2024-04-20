@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <style>
+        
+.container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="navbar">
+        <div style="padding-top: 20px;">
+            
+            <a href="home.html"> <img src="./all images/sugar.png" alt="Sugar Logo"> </a>
+            <input type="text" placeholder="🙂 try Liquid Lipstic">
+            <button id="login">login</button>
+            <button id="signup">Signup</button>
+            <button id="cart"><a href="./cart.html">cart🛒</a></button>
+
+        </div><br><br>
+        
+        <div class="nav-links">
+            <a href="#">LIPS</a>  
+            <a href="#">EYES</a>
+            <a href="#">NAILS</a>
+            <a href="#">SKINCARE</a>
+            <a href="#">ACCESSORIES</a>
+            <a href="#">GIFTING</a>
+            <a href="#">BESTSELLERS</a>
+            <a href="#">NEW LAUNCHES</a>
+            <a href="#">OFFERS</a>
+            <a href="#">BLOG</a>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container"></div>
+    
+</body>
+</html>
+<script>
+
+let products=[
+    {
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparent1stcard_1_d8d04971-107e-4018-a882-d183f3308cac.jpg%3Fv%3D1701868864&w=256&q=75",
+name:"SUGAR Play power Drip Lip Gloss-05 Dope",
+price:399.
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FBaseOfGloryPoreMinimizingPrimerPDPimages1copy.jpg%3Fv%3D1682956017&w=256&q=75",
+name:"Base Of Glory Pore Minimizing Primer",
+price: 849.00
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75",
+name:"Ace of Face Foundation stick <br>11 Shades",
+price:"₹999"
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_332ccf25-8e0f-4b40-be7b-3e322eeeb653.jpg%3Fv%3D1712590471&w=256&q=75",
+name:"Matte As Hell Crayon  <br> Lipstick Minis Set of 3",
+price:"₹999.00"
+},
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_332ccf25-8e0f-4b40-be7b-3e322eeeb653.jpg%3Fv%3D1712590471&w=256&q=75",
+name:"Matte Attack Transferproof <br> Lipstic 15 Shades ",
+price:"₹749"
+},
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparent1stcard_1_d8d04971-107e-4018-a882-d183f3308cac.jpg%3Fv%3D1701868864&w=256&q=75",
+name:"SUGAR Play power Drip Lip Gloss-05 Dope",
+price:399.
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FBaseOfGloryPoreMinimizingPrimerPDPimages1copy.jpg%3Fv%3D1682956017&w=256&q=75",
+name:"Base Of Glory Pore Minimizing Primer",
+price: 849.00
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F07_6fa35950-4830-4e97-80ea-d40f2fb42801.jpg%3Fv%3D1680622820&w=256&q=75",
+name:"Ace of Face Foundation stick <br>11 Shades",
+price:"₹999"
+},
+
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_332ccf25-8e0f-4b40-be7b-3e322eeeb653.jpg%3Fv%3D1712590471&w=256&q=75",
+name:"Matte As Hell Crayon  <br> Lipstick Minis Set of 3",
+price:"₹999.00"
+},
+{
+image:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_332ccf25-8e0f-4b40-be7b-3e322eeeb653.jpg%3Fv%3D1712590471&w=256&q=75",
+name:"Matte Attack Transferproof <br> Lipstic 15 Shades ",
+price:"₹749"
+},
+]
+
+let cont=document.querySelector(".container")
+
+
+// let lsData = JSON.parse(localStorage.getItem("cart") || "[]");
+let lsData=JSON.parse(localStorage.getItem("cart"))||[]
+
+
+function showdata(newarr){
+    cont.innerHTML=""
+    newarr.forEach(function(el,i){
+
+        let div=document.createElement("div")
+
+        let image=document.createElement("img")
+        image.setAttribute("src",el.image)
+
+        let name=document.createElement("h3")
+        name.innerText=el.name
+
+        let designation=document.createElement("p")
+        designation.innerText=el.designation
+
+        let price=document.createElement("p")
+        price.innerText=el.price
+
+        let addcart=document.createElement("button")
+        addcart.innerHTML="ADD"
+
+
+        addcart.addEventListener("click", function() {
+    lsData.push(el);
+    localStorage.setItem("cart", JSON.stringify(lsData));
+    // // Redirect to the cart page after adding the item
+    // window.location.href = "cart.html";
+});
+
+
+        addcart.addEventListener("click",function(){
+            lsData.push(el)
+            localStorage.setItem("cart",JSON.stringify(lsData))
+        })
+
+        
+        div.append(image,name,price,addcart)
+        cont.append(div)
+    })
+
+}
+showdata(products)
+
+</script>
